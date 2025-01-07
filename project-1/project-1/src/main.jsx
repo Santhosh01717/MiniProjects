@@ -9,7 +9,6 @@ function MainContent(){
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App>hiiii brooo</App>
-    <MainContent />
+    <App></App>
   </StrictMode>
 )
