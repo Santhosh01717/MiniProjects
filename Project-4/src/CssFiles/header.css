@@ -1,0 +1,13 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 120, 237);
+    color: rgb(235, 235, 235);
+    gap: 10px;
+    height: 80px;
+}
+header > img{
+    height: 40px;
+    width: 60px;
+}

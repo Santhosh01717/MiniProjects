@@ -1,0 +1,66 @@
+main{
+    margin: 40px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+@media screen and (min-width: 700px) {
+    .input {
+      height: 35px;
+      width: 300px;
+    }
+  }
+  
+
+  @media screen and (max-width: 700px) {
+    .input {
+      height: 35px !important;
+      width: 200px !important;
+    }
+  }
+  .btn-div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .b-btn{
+    width: 400px;
+    height: 40px;
+    background-color: rgb(69, 120, 237);
+    color: white;
+    border: none;
+  }
+  .b-btn:hover{
+     background-color: rgb(30, 82, 203);;
+  }
+  
+  .meme-img{
+    height: auto;
+    width: 500px;
+  }
+  @media screen and (max-width: 700px) {
+     .meme-img{
+       width: 400px;
+     } 
+  }
+  .img-container{
+    position: relative;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .topText{
+    position: absolute;
+    top: 15%;
+    bottom: 50%;
+    color: rgb(255, 0, 0);
+  }
+  .bottomText{
+    position: absolute;
+    top: 70%;
+    bottom: 15%;
+    color: rgb(255, 0, 0);
+  }

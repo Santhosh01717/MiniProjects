@@ -4,7 +4,9 @@ const Recipe = ({ ingredients , getRecipe }) => {
   return (
     <>
       <div>
-        <h1>Ingredients On Hand:</h1>
+      <div style={{display: "flex" , justifyContent: "center"}}>
+      <div>
+      <h1>Ingredients On Hand:</h1>
         <div className="ingredient-container">
           <ul>
             {ingredients.map((obj, index) => (
@@ -14,13 +16,19 @@ const Recipe = ({ ingredients , getRecipe }) => {
             ))}
           </ul>
         </div>
+      </div>
+      </div>
+        
         {ingredients.length > 3 && (
+          <div style={{display: "flex" , justifyContent: "center"}}>
+
           <div className="get-recipe-container">
             <div>
               <h3>Ready for a recipe?</h3>
               <p>Generate a recipe from your list of ingredients.</p>
             </div>
             <button onClick={getRecipe}>Get a recipe</button>
+          </div>
           </div>
         )}
       </div>
