@@ -1,5 +1,5 @@
 .main{
-    background-color: white;
+    background-color: rgb(241, 241, 241);
     height: 85vh;
     border-radius: 5px;
     display: flex;
@@ -9,7 +9,7 @@
 }
 .roll-btn{
     /* margin-top: 30px; */
-    background-color: rgb(38, 55, 211);
+    background-color: rgb(210, 46, 46);
     color: white;
     border: none;
     width: 100px;
@@ -20,6 +20,7 @@
     display: grid;
     grid-template: auto auto / repeat(5 , 1fr);
     gap: 20px;
+    background-color: rgb(241, 241, 241);
 }
 .dice-container  button{
       height: 100px;
@@ -28,6 +29,11 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+      background-color: rgb(255, 253, 253);
+      font-size: large;
 }
 @media screen and (max-width: 700px) {
     .dice-container  button{

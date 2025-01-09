@@ -1,5 +1,5 @@
 {
-  "name": "project-5",
+  "name": "project-6",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,9 +11,7 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-confetti": "^6.2.2",
-    "react-dom": "^18.3.1",
-    "react-use": "^17.6.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

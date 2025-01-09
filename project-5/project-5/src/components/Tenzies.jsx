@@ -3,10 +3,14 @@ import "../css/tenzies.css";
 import Die from "./Die";
 import { useEffect } from "react";
 import { nanoid } from "nanoid";
-import { use } from "react";
+import React from 'react'
+import { useWindowSize } from 'react-use'
+import Confetti from 'react-confetti'
+
 const Tenzies = () => {
   const [num, setNum] = useState(getRandomNumber());
   const btnRef = useRef(null);
+  const { width, height } = useWindowSize()
   function isSame(){
     let check = num[0].value;
     return num.every(obj => obj.value == check);
@@ -54,8 +58,11 @@ const Tenzies = () => {
     <>
       <main className="main">
         {
-          filled ? (<h1>{gameWon ? "Congratulations! You Won the Game" : "You Lost the Game"}</h1>) :  (<h1></h1>)
+          filled ? (<h1>{gameWon ? <>Congratulations! You Won the Game <Confetti
+                                                                        width={width}
+                                                                        height={height}/></> : "You Lost the Game"}</h1>) :  (<h1></h1>)
         }
+        
         <div className="dice-container">
           {num.map((obj) => (
             <Die

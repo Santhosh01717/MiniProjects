@@ -9,7 +9,7 @@ const Die = (props) =>{
     
     // const [btnStyle, SetBtnStyle] = useState({});
     const styles = props.dieStatus ?   {
-              backgroundColor: "#59E391",
+              backgroundColor: "rgb(51, 106, 246)",
               color: "white",
               border: "none",
               borderRadius: "5px"
