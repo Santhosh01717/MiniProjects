@@ -1,0 +1,73 @@
+.kb-container{
+     max-width: 600px;
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+     flex-wrap: wrap;
+     margin-bottom: 30px;
+}
+
+.kb-container button{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border: solid 1px none;
+    color: rgb(30, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.kb-container > button.correct{
+    background-color: rgb(81, 172, 39);
+}
+.kb-container > button.wrong{
+    background-color: rgb(234, 39, 5);
+}
+.wrong{
+    background-color: red;
+}
+.l-style{
+    display: flex;
+    max-width: 600px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.l-item{
+    padding: 8px;
+    border-radius: 3px;
+}
+.l-items-lost{
+    padding: 8px;
+    border-radius: 3px;
+    background-color: red;
+}
+.letter-container{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+.letter-container span{
+    width: 30px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    background-color: rgb(38, 36, 34);
+}
+.ng-btn{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(46, 85, 213);
+    color: white;
+    border-radius: 6px;
+    border: none;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
